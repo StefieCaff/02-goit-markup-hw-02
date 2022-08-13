@@ -19,8 +19,8 @@ color: var(--main-color);
  --sub-font-size: 14px;
  --main-background-color:#FFFFFF;
  --focus-hover-background-color: #2196F3;
- --focus-hover-color-buttonr:#FFFFFF;
- --focus-hover-color-text:#2196F3;
+ --focus-hover-color-button:#FFFFFF;
+ --focus-hover-active-color-text:#2196F3;
 }
 
 body{
@@ -50,13 +50,17 @@ body{
 .navbar-link:focus, 
 .contacts:focus, 
 .fcontacts:focus{
-  color: var(--focus-hover-color-text);
+  color: var(--focus-hover-active-color-text);
 }
 
 .navbar-link:hover, 
 .contacts:hover, 
 .fcontacts:hover{
-  color: var(--focus-hover-color-text);
+  color: var(--focus-hover-active-color-text);
+}
+
+.navbar-link:active {
+  color:#2196F3;
 }
 
 .hero-button:focus{
@@ -68,21 +72,21 @@ body{
 }
 
 .filter-button:focus {
-  background-color:#2196F3;
+  background-color:var(--focus-hover-background-color);
 }
 
 .filter-button:hover {
-  background-color:#2196F3;
+  background-color:var(--focus-hover-background-color);
 }
 
 .address:focus,
 .filter-button:focus{
-  color:#FFFFFF;
+  color:var(--focus-hover-color-button);
 }
 
 .address:hover,
 .filter-button:hover{
-  color: #FFFFFF;
+  color: var(--focus-hover-color-button);
 }
 
 .contacts{
@@ -173,8 +177,19 @@ h1{
   letter-spacing: 0.03em;
 }
 
-.projects{
-  
+.projects-heading{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.projects-filter{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--sub-text-color);
 }
 
 .footer{
