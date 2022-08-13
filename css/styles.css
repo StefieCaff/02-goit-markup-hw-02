@@ -1,24 +1,139 @@
-* {
-    list-style-type: none;
+ul{
+  list-style-type: none;
 }
 
-/* make variable for text color 
-background color and hover color background and text
-:root{
- color: #212121;
- background-color: #E5E5E5;
- hover: #2196F3
+a{
+text-decoration: none;
+color: var(--main-color);
 }
-*/
+
+:focus{
+  outline: none;
+}
+/* hero hover button color   #188CE8  */
+
+:root{
+ --main-color: #212121;
+ --sub-text-color:#757575;
+ --main-font-size: 16px;
+ --sub-font-size: 14px;
+ --main-background-color: #E5E5E5;
+ --focus-hover-background-color: #2196F3;
+ --focus-hover-color-buttonr:#FFFFFF;
+ --focus-hover-color-text:#2196F3;
+}
 
 body{
-  font-family: Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
-  color: #212121;
-  font-size: 16px
+  font-family: Roboto, sans-serif;
+  color: var(--main-color);
+  font-size: var(--main-font-size);
+  background-color: var(--main-background-color);
+}
+
+.logo{
+  font-family: Raleway, sans-serif;
+  font-size:  26px;
+  font-weight: 700;
+  color: #2196F3;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.navbar{
+  font-size: var(--sub-font-size);
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.navbar-link:focus, .contacts:focus, .fcontacts:focus{
+  color: var(--focus-hover-color-text);
+}
+
+.navbar-link:hover, .contacts:hover, .fcontacts:hover{
+  color: var(--focus-hover-color-text);
+}
+
+.hero-button:focus{
+  background-color: #188CE8;
+}
+
+.hero-button:hover {
+  background-color: #188CE8;
+}
+
+.address:focus{
+  color:#FFFFFF;
+}
+
+.address:hover {
+  color: #FFFFFF;
+}
+
+.contacts{
+  color: var(--sub-text-color);
+  font-size: var(--sub-font-size);
+  font-weight:500
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.hero{
+  background-color: #2F303A;
+}
+
+h1{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero-button{
+  background-color: #2196F3;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.group-heading{
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--sub-font-size);
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.group-detail{
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--sub-font-size);
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--sub-text-color)
+}
+
+.address{
+  color: var(--sub-text-color);
+  font-size: var(--sub-font-size);
+  font-weight: 400;
+  line-height: 24px;
+   letter-spacing: 0.03em;
+}
+.fcontacts {
+  color: var(--sub-text-color);
+  font-size: var(--sub-font-size);
+  font-weight:400
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
