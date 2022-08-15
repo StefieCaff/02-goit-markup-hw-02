@@ -15,17 +15,17 @@ color: var(--main-color);
 :root{
  --main-color: #212121;
  --sub-text-color:#757575;
- --main-font-size: 16px;
- --sub-font-size: 14px;
+ --sub-font-size: 16px;
  --main-background-color:#FFFFFF;
  --focus-hover-background-color: #2196F3;
  --focus-hover-color-button:#FFFFFF;
- --focus-hover-active-color-text:#2196F3;
+ --focus-hover-color-text:#2196F3;
 }
 
 body{
   font-family: Roboto, sans-serif;
   font-style: normal;
+  font-size: 14px;
   color: var(--main-color);
   font-size: var(--main-font-size);
   background-color: var(--main-background-color);
@@ -41,26 +41,23 @@ body{
 }
 
 .navbar{
-  font-size: var(--sub-font-size);
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
 
+.current-link{
+  color: var(--focus-hover-color-text);
+}
+
 .navbar-link:focus, 
-.contacts:focus, 
-.fcontacts:focus{
-  color: var(--focus-hover-active-color-text);
+.contacts:focus {
+  color: var(--focus-hover-color-text);
 }
 
 .navbar-link:hover, 
-.contacts:hover, 
-.fcontacts:hover{
-  color: var(--focus-hover-active-color-text);
-}
-
-.navbar-link:active{
-  color: var(--focus-hover-active-color-text);
+.contacts:hover {
+  color: var(--focus-hover-color-text);
 }
 
 .hero-button:focus{
@@ -91,8 +88,7 @@ body{
 
 .contacts{
   color: var(--sub-text-color);
-  font-size: var(--sub-font-size);
-  font-weight:500
+  font-weight:500;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
@@ -112,19 +108,20 @@ h1{
 }
 
 .hero-button{
+  font-family: Roboto, sans-serif;
   background-color: #2196F3;
   color: #FFFFFF;
   font-weight: 700;
-  font-size: var(--main-font-size);
   line-height: 30px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
 }
 
 .group-heading{
   font-weight: 700;
-  font-size: var(--sub-font-size);
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -132,13 +129,12 @@ h1{
 
 .group-detail{
     font-weight: 400;
-    font-size: var(--sub-font-size);
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--sub-text-color)
 }
 
-.team-heading, .do-heading{
+.section-heading{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -146,13 +142,13 @@ h1{
     letter-spacing: 0.03em;
 }
 
-.team-list{
+.section-team{
   background-color: #F5F4FA;
 }
 
 .team-name{
   font-weight: 500;
-  font-size: var(--main-font-size);
+  font-size: var(--sub-font-size);
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -160,7 +156,7 @@ h1{
 
 .team-title{
   font-weight: 400;
-  font-size: var(--main-font-size);
+  font-size: var(--sub-font-size);
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -168,13 +164,21 @@ h1{
 }
 
 .filter-button{
-  background: #F5F4FA;
+  font-family: Roboto, sans-serif;
+  background-color: #F5F4FA;
+  border: none;
+  cursor: pointer;
   border-radius: 4px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--sub-font-size);
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.filter-current{
+  background-color: var(--focus-hover-background-color);
+  color: var(--focus-hover-color-button);
 }
 
 .projects-heading{
@@ -186,7 +190,7 @@ h1{
 
 .projects-filter{
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--sub-font-size);
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--sub-text-color);
@@ -198,15 +202,8 @@ h1{
 
 .address{
   color: var(--sub-text-color);
-  font-size: var(--sub-font-size);
   font-weight: 400;
+  font-style: normal;
   line-height: 24px;
    letter-spacing: 0.03em;
-}
-.fcontacts {
-  color: var(--sub-text-color);
-  font-size: var(--sub-font-size);
-  font-weight:400
-  line-height: 24px;
-  letter-spacing: 0.03em;
 }
